@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-Fit Example</title>
+    <style>
+        .container {
+            height: 688px;
+            width: 666px;
+            border: 2px solid black;
+            background-position: center center;
+            background-image: url(image.png);
+            background-repeat: no-repeat;
+            background-clip: border-box;
+        }
+        /*.img {
+            width: 100%; /* Ensures the image fits the container width */
+            /* height: 100%; Ensures the image fits the container height */
+             /* object-fit: cover;  */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            /* we can also give position in pixel */
+            /* object-position: 10px 30px; */
+            /* object-position: 50% 50%; */
+
+            /* object-position:  top left  ; */
+             /* Maintains aspect ratio while covering the container */
+            /* object-fit: contain; */
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img class="img" src="image.png" alt="Image"> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - Margin, Padding & Borders </title>
+</head>
+<style>
+    
+    .box{
+        
+        background-color: rgb(161, 210, 128);
+
+    }
+    .box1{
+          color: rgb(199, 22, 22);
+          padding: 10px;
+          margin: 25px;
+          border: 5px solid blue;
+          height: 200px;
+          /*box-sizing: border-box this means that declare 
+           height 200px is inluded boarder  and padding  means if 
+           you are starting from 1px start from border 1px  */
+          box-sizing: border-box;
+    }
+    /* Margin Collapse Concept : it means if the Margin of 2 Elements are collpsing then take the 
+    the maximum margin out of 2  */
+    .box2{
+          color:rgb(255, 0, 0);
+          padding: 10px;
+          margin: 25px;
+          border: 5px solid rgb(0, 0, 0);
+          height: 200px;
+          box-sizing: border-box;
+    
+    }
+    h1{
+        color:rgb(94, 50, 205);
+    }
+    h1:hover{
+           color : red;
+    }
+    
+</style>
+<body>
+    <!-- <h2>CSS Box Model - Margin, Padding & Borders </h2> -->
+    <div class ="box box1">This is the Random Text1</div>
+    <div class ="box box2"> This is  Random Text2</div>
+    <h1>This is heading first</h1>
+    
+
+</body>
+</html>

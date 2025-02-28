@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            --primary-color: black;
+            --text-color: rgb(155, 155, 237);
+            --secondary-color: pink;
+        }
+        .header{
+            position: sticky;
+            top:0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 10px;
+            position: fixed;
+            heigh 
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 120px;
+        }
+
+        ul li {
+            margin: 15px;
+            font-weight: 500;
+            color: var(--secondary-color);
+
+        }
+
+        ul li:nth-child(1) {
+            padding-right: 320px;
+        }
+
+        ul li:nth-child(2) {
+            padding-right: 0px;
+        }
+
+        ul li:nth-child(3) {
+            padding-right: 20px;
+        }
+
+        ul li:nth-child(4) {
+            padding-right: 20px;
+        }
+
+        .b1 {
+            display: flex;
+            justify-content: space-between;
+            /* Pushes children to opposite sides */
+            align-items: center;
+            /* Centers children vertically if needed */
+            padding: 20px;
+            /* Optional spacing inside parent */
+            background-color: lightgray;
+            height: 1000px;
+        }
+
+        .b2,
+        .b3 {
+            width: 45%;
+            /* Adjust the width as needed */
+            height: 300px;
+            padding: 20px;
+            border: solid black;
+        }
+
+        .b2 {
+            background-color: rgb(43, 133, 83);
+        }
+
+        .b3 {
+            background-color: blueviolet;
+        }
+
+        .b4 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: rgb(71, 101, 147);
+            padding: 100px;
+            height: 1000px;
+            color: aliceblue;
+            border-radius: 10px;
+            
+
+        }
+
+        .b5 {
+            position: sticky;
+            /* Makes the element sticky */
+            top: 10px;
+            /* Distance from the top when it sticks */
+            display: flex;
+            /* Flexbox container */
+            justify-content: center;
+            /* Centers content inside the button */
+            background-color: rgb(39, 177, 59);
+            border-radius: 100px;
+            padding: 20px;
+            margin-left: auto;
+            /* Pushes the button to the right */
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="b1">
+        <div class="b2"></div>
+        <div class="b3"></div>
+    </div>
+    <div class="b4">
+        Our Prices
+        <div class="b5">
+            whatsapp
+        </div>
+    </div>
+    <footer>
+        <ul style="background-color: black ; padding: 50px;">
+            <li>Please comeback</li>
+            <li>Visit our web</li>
+            <li>Take a tour</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

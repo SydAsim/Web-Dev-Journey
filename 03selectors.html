@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Selectors-CSS</title>
+    <!-- Element Selector -->
+     <style>
+        div{
+           background-color: rgb(237, 170, 170);
+        }
+
+        /* This is Class selector */
+        .red{
+            background-color: rgb(42, 122, 165);
+        }
+
+        /* this is ID selector */
+        #Green{
+            background-color: #99dc09;
+        }
+        /* This is Child Selector  */
+        /* div > p{
+            background-color:rgb(35, 15, 0) ;
+        } */ 
+
+        /* Discindent Selector : actually the Discindent selector select the  Selector regardless where it is in article in div does not matter while the div > p follows the specific order  */
+        div p {
+            background-color: blue;
+        } 
+        /* UNIVERSIAL Selecctors  */
+        * {  
+            margin : 0;
+            padding: 0;
+        }
+        
+
+        /* Pseudo SELEctors Cheaks have we visisted the website or not  */
+        a:visited{
+            color: chocolate;
+        }
+
+        /* link selctor cheaks have we visited the we the website or not */
+        a:link{ 
+            color: darkgreen;
+        }
+
+        /* Active Selectors it turn blue or any =other or whatever we want to set*/
+        a:active{
+            color: blue;
+        }
+        
+     </style>
+</head>
+<body>
+    <div>
+        Hello this is Element Selector
+        <article>
+        <p>
+            This is a Paragraph and the is in child Selector
+        </p>
+    </article>
+        <article>
+            This is article line and yeah
+        </article>
+    </div>
+
+    <div class="red">
+        Hello this is Element Selector
+    </div>
+
+    <div id="Green">
+        Hello this is Element Selector
+    </div>
+    <div>
+        <a href="https://www.google.com">google</a>
+        <a href="https://www.facebook.com">FaceBook</a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media Queries </title>
+    <style>
+          body{
+            background-color: rgb(244, 0, 0);
+        }
+        /* width agar zayada hain height tou landsscpae else portriat */
+        @media screen and (orientation :portrait) {
+             body {
+                border: 4px solid black;
+            } 
+        }
+        /* agar 455px say maxwidth kam howa thou hi laga ga blue color
+        if min then after 455px  to summarize it is used to make responsive designs*/
+        @media only screen and (max-width:445px) {
+            body{
+            background-color: blue;
+            .boxes{
+            flex-direction: column;
+        }
+        }
+
+      
+
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width : 334px;
+            height : 334px;
+            background-color: rgb(128, 194, 194);
+            padding: 3px;
+            margin: 3px;
+        }
+         /* @media not|only mediatype and (expressions) {
+            CSS CODE;
+        } */
+        
+             
+    </style>
+</head>
+<body>
+    Hey iam Red Boy 
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

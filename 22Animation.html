@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: rgb(96, 110, 110);
+        width: 30vw;
+        height: 80vh;
+    }
+    .box{
+        background-color: aqua;
+        width: 34px;
+        height: 55px;
+        /* animation-name: AsimsAnimation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-delay:1s;
+        animation-direction: alternate-reverse;
+        animation-play-state: paused; */
+        animation: AsimsAnimation 2s ease-in backwards ,
+                A2 2s ease-in forwards; 
+    }
+
+    @keyframes AsimsAnimation{
+        from{
+            background-color: red;
+
+        }
+        to{
+            background-color: rgb(50, 60, 205);
+            transform: translateX(1000px);
+        }
+         
+    }
+    @keyframes A2{
+        0%{
+             transform: rotate(1deg);
+        }
+        10%{
+            transform: rotate(30deg);
+        }
+        20% {
+            tranform: rotate(100deg);
+        }
+        50% {
+            transform: rotate(200deg);
+        }
+        80% {
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(400deg);
+        }
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            Hello
+        </div>
+    </div>
+    
+</body>
+</html>

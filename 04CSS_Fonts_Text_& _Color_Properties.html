@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts Text </title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        h1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+           'Segoe UI',is main font and others are fall back fonts 
+           so if the any font is not present in users pc so then other 
+           font family memeber font can replace it place */
+        p{
+            
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+             font-family: 'Poppins', sans-serif; 
+             font-size: 50px;
+            /* font-style: italic;
+            font-weight: 600;
+            text-decoration:overline;  */
+        }
+        h2{
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color:brown;
+            text-decoration-thickness: 12px;
+            text-indent: 20px;
+           
+        }
+        .lorem{
+            /* text-overflow:clip; */ 
+               /* overflow:hidden; */
+            border: 5px solid red;
+            width: 300px;
+            word-break: break-all;
+
+            
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>About fonts</h2>
+        <p>This is Fonts paragaph </p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore non consectetur, magnam sunt vel nulla suscipit libero voluptatum reprehenderit, voluptates culpa. Sint culpa tenetur quibusdam, id vel in aspernatur?</p>
+    </diV>
+    
+</body>
+</html>

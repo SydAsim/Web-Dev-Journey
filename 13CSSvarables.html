@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Global Variables declared using :root{} and where ever used in website can be chnages from where it is orginaly declared and can be accessed using var--name_of_vavriable) through Global variables not only colors but all the values like padding widht etc can also be stored in Global and just changes can be made in Gloabal  background URLS Strings Numbers */
+    :root{
+        --color:rgb(129, 42, 154);
+        --seccolor:rgb(62, 185, 219);
+        --defpad:34px;
+        --defop:0.5;
+    }
+  *{
+    margin:0;
+    padding:0;
+  }
+  .nav{
+    background-color:var(--color);
+    color:var(--seccolor);
+  }
+
+  ul{
+    display: flex;
+  }
+
+  ul li{
+      list-style: none;
+      padding: 23px;
+      border: 2px solid var(--seccolor);
+      padding: var(--defpad);
+      opacity: var(--defop);
+    }
+
+  ul li:first-child{
+        /* local variable means overriding wont change the Global declareation*/
+    /* --color:rgb(4, 15, 76); */
+    /* blue means if gloabal color not found */
+    background-color: var(--color,blue);
+  }
+
+  .container{
+    background-color: var(--seccolor);
+    color: var(--color);
+  }
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ab provident quidem asperiores corrupti. Enim in tempore, accusamus quam nam sapiente quaerat deserunt delectus adipisci quasi repellendus quo impedit odio!
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Animated Navbar</title>
+    <style>
+        :root {
+            --primary-color: #ffffff; /* Text color */
+            --secondary-color: #0078ff; /* Highlight color */
+            --background-color: #1f2937; /* Navbar background */
+            --hover-color: rgba(255, 255, 255, 0.1); /* Hover effect color */
+            --transition-speed: 0.3s; /* Animation speed */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--background-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: color var(--transition-speed);
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-color);
+            bottom: -5px;
+            left: 0;
+            transition: width var(--transition-speed);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            height: 3px;
+            width: 25px;
+            background-color: var(--primary-color);
+            margin: 4px 0;
+            transition: transform var(--transition-speed);
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: var(--background-color);
+                flex-direction: column;
+                gap: 0;
+                width: 200px;
+                transform: translateX(100%);
+                transition: transform var(--transition-speed);
+            }
+
+            .nav-links.active {
+                transform: translateX(0);
+            }
+
+            .nav-links li {
+                padding: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Brand</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="https://chatgpt.com/">Home</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w">About</a></li>
+            <li><a href="https://chat.deepseek.com/">Services</a></li>
+            <li><a href="https://chat.qwenlm.ai/?spm=5aebb161.2ef5001f.0.0.14b0c921umocwZ">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html> -->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+       font-size: 40px;
+    }
+    *{
+        padding :0 ;
+        margin: 0;
+    }
+    .box{
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 2449px; 
+        it will have scroll bar to avoid that we to use the
+        VW sizing which will fit according to the users view */
+        width: 80vw;
+        /* margin: auto ; can only be done for external css not inline */
+        margin: auto ;
+        height : 10vh;
+
+        background-color: aquamarine;
+    }
+    .box1{
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 2449px; 
+        it will have scroll bar to avoid that we to use the
+        VW sizing which will fit according to the users view */
+        width: 80vw;
+        /* margin: auto ; can only be done for external css not inline */
+        margin: 23px auto ;
+       
+        /* height :120vh; */
+        /* min-height : 120px we cna adjust height automatically  */
+        /* min-height:150vh; */
+        background-color: aquamarine;
+        font-size: 18px;
+        width : 50%;
+        border: 5px solid blue;
+        /* 50% means is ke parent ke paragraph ke 
+        50 % */
+    }
+    .box1 span {
+        width :50%;
+        border: solid black;
+
+    }
+    
+        .box1 p{
+            font-size:2em;
+            min-height:200px;
+            /* "EM" means jitni isse inherit main value milne thi us ka doubal eayega
+
+            "REM" means jitna root ko milna tha html{font-size:30px} ko  us ka dogna 
+            roots ka size ka dogna
+             */
+
+        }
+        .mycont{
+            box-sizing: border-box;
+            border: 5px solid black;
+
+            margin:23px auto;
+            color:rgb(24, 25, 22);
+            font-size: 22px;
+            /* width: 100vmin;  */
+          /* vmin so will be equal to vh in laptop */
+          width: 80vw;
+        }
+    
+
+</style>
+<body>
+     <div class="box"> CSS Sizing and more </div> 
+    
+
+     <div class="box1"><p><span>helllo this is span </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate iste architecto, pariatur ratione provident recusandae repellendus magni? Cum blanditiis modi culpa vel quas voluptate, itaque odio voluptatum natus voluptatibus soluta nostrum minus totam adipisci laudantium sint quae? Hic voluptate delectus sapiente itaque debitis officiis ab vero nisi, maxime dolorum consectetur laudantium, reprehenderit animi temporibus facere et voluptates laboriosam ut, sed libero cum doloremque quo? Minima ea, excepturi illum deleniti laborum fugiat adipisci aut nemo voluptatem consequuntur quaerat quae iure voluptatibus error molestias ex qui consectetur sed possimus placeat. Ratione animi iure unde mollitia modi nisi, iusto sunt delectus assumenda distinctio a vitae consequuntur nemo quisquam. Natus, nesciunt adipisci? Perspiciatis tenetur hic dolor, aperiam ratione ut assumenda mollitia quaerat facilis id modi natus labore cumque omnis. Similique mollitia eveniet dolorem blanditiis, autem laudantium illo enim praesentium? Ipsa, inventore. Quaerat eveniet blanditiis nobis, corporis debitis totam voluptate quidem officia, sunt et incidunt. Animi omnis sunt mollitia expedita perspiciatis neque non cupiditate architecto corporis dolorem quod, adipisci consequuntur nostrum impedit ea eaque, id nesciunt labore magnam blanditiis asperiores recusandae atque aliquam. Fuga debitis deserunt totam veniam est veritatis accusantium inventore magnam neque aut molestias repellat impedit tempore non minus sint eum, quae quod.0 ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto. Ab delectus quibusdam reiciendis maxime suscipit magni illo deleniti! Provident atque, fuga vel aliquid non corrupti hic veritatis fugit esse quod iste qui ipsam a exercitationem possimus saepe sequi facere molestias aliquam quibusdam? Corporis ut quasi doloribus sit dolores, dignissimos ea, quam animi iste a iure. </p></div> 
+
+     <div class="mycont"> This is another container </div>
+</body>
+</html>

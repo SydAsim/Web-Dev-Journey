@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow-Property</title>
+</head>
+<style>
+    .box{
+        margin: 50px;
+        height: 40vw;
+        width: 20vh;
+        border: 4px solid black;
+
+        overflow: auto;
+        /* white-space: nowrap; */
+        /* paragraph kay line ko nichay ,at girao  */
+        /* text-overflow: ellipsis; */
+        /* for (............) */
+        /* overflow:hidden;  same as clip removes the scroll bar */
+        /* overflow:clip;  */
+        /*  overflow-x: scroll; */
+        /* overflow-y: scroll; */
+        overflow:hidden auto;
+    }
+
+</style>
+<body>
+    <div class="box" >iam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure aliquid, reiciendis debitis aperiam tenetur, dignissimos delectus dolor asperiores minus optio. Natus dolores soluta reprehenderit inventore tempora voluptates architecto corporis ipsa debitis vero molestias facilis tenetur laboriosam id, recusandae magnam tempore minima, nisi dignissimos ipsum eligendi.</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Specificity-Cascading</title>
+<!-- the order of specificity is:
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+</head>
+<style>
+    /* This specificity of this Selector is 1 */
+    h1{
+        color: yellowgreen;
+    }
+     /* This specificity of this class  is 10 +1 = 11 specificity increases  */
+    h1.cyellow{
+        color: yellow;
+    }
+     /* This specificity of this class  is 10 */
+    .cred{
+        color: red
+    }
+     /* This specificity of this class  is 10 */
+    .cpurple{
+        color: purple;
+    }
+    /*thsi is example of attribute selector and  /* This specificity of this attribute selector is  is 10 */ */
+    /* [data-x=a]{
+      color: blue
+    }
+     */
+</style>
+<body>
+    <div>
+        <h1 class="cyellow cred cpurple" data-x="a"> Css Specificity</h1>
+    </div>
+</body>
+</html>

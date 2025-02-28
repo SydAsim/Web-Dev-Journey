@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>More-on-CSS-Selector</title>
+</head>
+<style>
+    /* .box:first-child{
+        background-color: red;
+    } */
+    /* .box::first-line {
+        color: blueviolet;
+    } */
+    /* .boxes *{
+        color: brown;
+        border: 2px solid black;
+    } */
+
+    /* if i want kay saray paragraphs and saray anchor a tags main ya sarar boxes main margin padding ko ko kardo  */
+    /* Grouping of Selectors  */
+    /* p,a,.box,[data-color = primary]{
+        padding:20px;
+        margin:10px;
+    }
+     */
+    
+    /* .box:nth-child(Odd){
+        background-color: aqua;
+    } */
+    /* .box:nth-last-child(1){
+        background-color: aqua;
+    } */
+     /* Element ko CSS kay Through Dynamically Insert kia ja sakata hain */
+     /* Sudo Elements  */
+    .boxes::before{
+        content:"This is Before Boxes and yeah thats amazing";
+        color: red;
+        background-color: black;
+    } 
+    .boxes::after{
+        content:"This is After Boxes and yeah thats amazing";
+        color: aqua;
+        background-color: green;
+    } 
+    /* just like in Real website when we select the Text and what kind of color it changes */
+    ::selection{
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 110, 255);
+    }
+    .box::first-letter{
+        color:black;
+        font-size: 40px;
+    }
+    input::placeholder{
+        color: rgb(153, 154, 155);
+    }
+
+</style>
+<body>
+    <div class="boxes">
+        <div data-color="primary"  class="box">Hey I am box 1</div>
+        <div data-color="primary" class="box">Hey iam a Box 2</div>
+        <div class="box">Hey iam a Box 3</div>
+    </div>
+    <input type="number" placeholder="Enter your rollno :)">
+</body>
+</html>

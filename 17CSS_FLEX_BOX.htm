@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS- Flex-Box</title>
+</head>
+<style>
+    .container {
+        border: 2px solid red;
+        /* Means you can use properties of flex box */
+        display: flex;
+        height: 90vh;
+        /*increase height of the container*/
+        /* justify-content:center; the content inside the container will be in center */
+        /* align-items:center;it will vertically center the content */
+        /* flex-direction:column; Vertical colum main align hojaengay */
+        /* flex-direction:column-reverse; /*it will reverse the column */
+        /*flex-direction:row-reverse; */
+        /* Main axis kay perpendicular jo neechay ke taraf cross axises it can be changed by chnaging the flex-direction 
+        if flex-direction: is in column direction then it will be reverse of it like the main axises will be perpendicular to the cross axises */
+        flex-direction: row;
+        /* flex-wrap:wrap; */
+        /* flex-wrap:wrap-reverse; */
+        /* so it willwrap the content inside the section intead of overflowing */
+        /* There is no justify items in Flexbox */
+        /* lign-content : we use it jab hamaray pass multiple lines hotay multiple line tab hotay  jab jo items hain wo wrap kar rahay hongay  */
+        /* align-content:left; */
+
+        /* we can also use 2 prperties  */
+        /* flex-flow: row wrap-reverse; */
+
+        /* gap is space between items */
+        /* gap:40px; */
+        /* row-gap:10px;
+        column-gap:10px; */
+        /* and if you dont want to use column or row directly apply it  */
+        /* first row gap and then column gap */
+        gap: 10px 10px;
+        /* THIS IS ARE CONTAINER PROPEERTY AND WE CANNOT USE IN THE ITEM PROPERTY */
+    }
+
+    div.item {
+        /*flex-grow:1 is difault 0 but flex-grow:1 mean poray flexbox main saray item equal jaga laingey */
+        /* flex-grow:1; */
+        /* flex-shrink:; */
+        border: 2px solid black;
+        height: 92px;
+        width: 92px;
+        /* margin: 4px; */
+        background-color: blue;
+
+    }
+
+    /* .item1{
+        /* flex-grow:2; */
+
+    /* jitna zayada order level hoga kesi tag utna late/Akhir main wo show hoga */
+    /* 
+    .order-1{
+        order: 100;
+    }
+    .order-2{
+        order: 2;
+    }
+    .order-3{
+        order: 3;
+    } */
+    .item1 {
+        align-self: flex-end;
+        align-self: flex-start;
+    }
+</style>
+
+<body>
+    <main class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <!-- <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item order-1">99</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> -->
+
+
+
+
+
+    </main>
+</body>
+
+</html>
