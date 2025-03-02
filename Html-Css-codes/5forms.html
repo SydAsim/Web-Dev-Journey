@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>froms-lets learn it</title>
-     <form action ="post">
+    <form action ="post">
     <!-- Text input for username -->
+     <!-- we will be using Form elements to display inline content label input button etc -->
      <h1>Form to fill</h1>
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required>
@@ -38,13 +39,12 @@
   <input type = "radio" id="female" name="gender" value="female">
   <label for="female">Female</label>
 <div>
-  <intput type="checkbox" id="Subscribe" name="Subscribe" value="yes">
+  <input type="checkbox" id="Subscribe" name="Subscribe" value="yes">
     <label for="Subscribe">Subscribe for Newslatter </label>
 </div>
   <br>
   <textarea type="comment" row="4" cols="40">
-    Enter you Comment Here 
-  </textarea>
+    Enter you Comment Here   </textarea>
   <br>
   <select name="Fruits">
     <option value ="Apple">Apple</option>
@@ -53,7 +53,7 @@
   </select>
 
 <br>
-<form action="/submit">
+<form action="submit">
   <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
   <select name="fruits">
     <option value="apple">Apple</option>
@@ -69,13 +69,16 @@
   <input type="text" required>
   <input type="text" pattern="[a-zA-Z0-9]+">
 
-
+  <!-- autofocus Attribute
+Purpose: Automatically focuses the input field when the page loads.
+This means the cursor will be placed in the input field, ready for user input.
+ 
+required Attribute
+  Purpose: Ensures that the input field cannot be left blank when submitting the form.
+  This adds basic client-side validation. -->
 
 
 </form>
-
-
-
 
 </head>
 <body>
