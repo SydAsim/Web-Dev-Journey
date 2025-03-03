@@ -34,7 +34,7 @@
         VW sizing which will fit according to the users view */
         width: 80vw;
         /* margin: auto ; can only be done for external css not inline */
-        margin: 23px auto ;
+        margin: 23px auto;
        
         /* height :120vh; */
         /* min-height : 120px we cna adjust height automatically  */
@@ -48,19 +48,22 @@
     }
     .box1 span {
         width :50%;
-        border: solid black;
-
+        border: solid red;
     }
     
         .box1 p{
             font-size:2em;
             min-height:200px;
-            /* "EM" means jitni isse inherit main value milne thi us ka doubal eayega
+/* em:
+Relative to the font size of the parent element.
+If the parent element's font size is 16px, then:
+1em = 16px
+2em = 32px
+It cascades, so nested elements multiply the font sizes if em is used. */
 
-            "REM" means jitna root ko milna tha html{font-size:30px} ko  us ka dogna 
-            roots ka size ka dogna
-             */
-
+/* rem:
+Relative to the root element's font size.
+It doesn’t cascade like em and always refers to the html font size (usually 16px by default). */
         }
         .mycont{
             box-sizing: border-box;
@@ -85,3 +88,28 @@
      <div class="mycont"> This is another container </div>
 </body>
 </html>
+
+<!-- Key Benefits of Using vw for Responsiveness:
+Automatic Scaling:
+
+Elements adjust proportionally as the screen size changes.
+Example: A 50vw box will always occupy 50% of the screen width, whether on a mobile, tablet, or desktop.
+Fewer Media Queries:
+
+With vw, you may not need as many (or any) media queries for different breakpoints, as the layout adjusts dynamically.
+Consistency Across Devices:
+
+Ensures that elements maintain their proportions on screens of all sizes.
+
+Use px:
+For fixed, unchanging sizes like icons, borders, or specific dimensions that need precision.
+Use vw:
+For responsive layouts where elements should scale with the viewport size, like headers, banners, or fluid font sizes.
+-->
+<!-- Unit/Function	Meaning	                     Example Usage	
+em	           Relative to parent font size	     font-size: 2em;	
+rem	           Relative to root font size	     font-size: 1.5rem;	
+vmin	       Percentage of the smaller viewport dimension	     width: 10vmin;	
+vmax	       Percentage of the larger viewport dimension	     width: 20vmax;	
+min()	       Chooses the smallest value	     width: min(30vw, 200px);	
+max()	       Chooses the largest value	     width: max(20vh, 150px);	-->
